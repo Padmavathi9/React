@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import CourseListRow from './CourseListRow';
 
-const CourseList = ({course}) => {
+const CourseList = ({courses}) => {
     return (
         <table className="table">
             <thead>
@@ -14,7 +14,7 @@ const CourseList = ({course}) => {
                 </tr>
             </thead>
             <tbody>
-                {course.map(course => <CourseListRow key={course.id} course={course}/>
+                {courses.map(course => <CourseListRow key={course.id} course={course}/>
                 )}
             </tbody>
         </table>
@@ -22,7 +22,7 @@ const CourseList = ({course}) => {
 };
 
 CourseList.protoTypes={
-    course:PropTypes.array.isRequired
+    courses:PropTypes.array.isRequired
 };
 
 export default CourseList;
