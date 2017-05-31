@@ -1,0 +1,17 @@
+#app {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+}
+
+a.active {
+    color: orange;
+}
+
+.logo {
+    background: url('/images/logo.png')no-repeat;
+    width: 40px;
+    height: 40px;
+}
